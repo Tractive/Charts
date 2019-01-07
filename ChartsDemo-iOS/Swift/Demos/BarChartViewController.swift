@@ -11,7 +11,7 @@ import Charts
 
 class BarChartViewController: DemoBaseViewController {
     
-    @IBOutlet var chartView: BarChartView!
+    @IBOutlet var chartView: RoundedBarChartView!
     @IBOutlet var sliderX: UISlider!
     @IBOutlet var sliderY: UISlider!
     @IBOutlet var sliderTextX: UITextField!
