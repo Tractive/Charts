@@ -57,6 +57,9 @@
 		45C459FA25DFCBE62FA6A06C /* BarChartDataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8BFF1CBC58D5B9DBFFB9B /* BarChartDataEntry.swift */; };
 		48E875BBD6540BDE1C1B7D3D /* AxisBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AEFBF4D85B9D2EAAB3071 /* AxisBase.swift */; };
 		4E98788ABEF6496C23F3E6C6 /* HorizontalBarHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BE9A97FFA41D3D85CAFFC7 /* HorizontalBarHighlighter.swift */; };
+		4F715C332216B2A200A0079E /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F715C322216B2A200A0079E /* NSColor+Extension.swift */; };
+		4F715C362216B42B00A0079E /* NSBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F715C352216B42B00A0079E /* NSBezierPath+Extension.swift */; };
+		4F715C382216B6B700A0079E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F715C372216B6B700A0079E /* UIColor+Extension.swift */; };
 		4FACC6FD308AFB231EB4A93D /* XAxisRendererRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC19DC2434D65FFB446A61B7 /* XAxisRendererRadarChart.swift */; };
 		50476F8E6662CAFC1EFE0723 /* IScatterChartDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219BC9CEA037F897E92E45D1 /* IScatterChartDataSet.swift */; };
 		515E286E6C47594D3FFA3DD1 /* ViewPortHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EAEBB7CF73E33565FC2896 /* ViewPortHandler.swift */; };
@@ -222,6 +225,9 @@
 		4C978F31F23C7D21197DC2A1 /* LineChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineChartData.swift; path = Source/Charts/Data/Implementations/Standard/LineChartData.swift; sourceTree = "<group>"; };
 		4EAA8AA30C377D54D22A577A /* IValueFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IValueFormatter.swift; path = Source/Charts/Formatters/IValueFormatter.swift; sourceTree = "<group>"; };
 		4EED352A98860E031F13AFB7 /* BubbleChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleChartView.swift; path = Source/Charts/Charts/BubbleChartView.swift; sourceTree = "<group>"; };
+		4F715C322216B2A200A0079E /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
+		4F715C352216B42B00A0079E /* NSBezierPath+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+Extension.swift"; sourceTree = "<group>"; };
+		4F715C372216B6B700A0079E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4F7E6A99D82E6AE3804D5A39 /* ILineRadarChartDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILineRadarChartDataSet.swift; path = Source/Charts/Data/Interfaces/ILineRadarChartDataSet.swift; sourceTree = "<group>"; };
 		4F9922F0641F7955DC6CD324 /* Charts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Charts.h; path = "Source/Supporting Files/Charts.h"; sourceTree = "<group>"; };
 		5225ABC3C0C2F65FC094EEBB /* XAxis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XAxis.swift; path = Source/Charts/Components/XAxis.swift; sourceTree = "<group>"; };
@@ -383,6 +389,7 @@
 		2647844720BC6574A544A337 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
+				4F715C342216B41A00A0079E /* Extensions */,
 				A49C1F0F9CCD6E5C143C29F4 /* Animation */,
 				8C531E3F3C3DE5843C93C3DA /* Charts */,
 				51EF1986C9884C25EED1C2CB /* Components */,
@@ -422,6 +429,16 @@
 				0F099502DA50C56204E7B744 /* Range.swift */,
 			);
 			name = Highlight;
+			sourceTree = "<group>";
+		};
+		4F715C342216B41A00A0079E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F715C322216B2A200A0079E /* NSColor+Extension.swift */,
+				4F715C352216B42B00A0079E /* NSBezierPath+Extension.swift */,
+				4F715C372216B6B700A0079E /* UIColor+Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		51EF1986C9884C25EED1C2CB /* Components */ = {
@@ -867,6 +884,7 @@
 				C04D269AD4A373FD2B621C43 /* LineChartData.swift in Sources */,
 				95B6D6F35684292A62DBEA74 /* LineChartDataSet.swift in Sources */,
 				7CB7F74752619B0270CCB0A9 /* LineRadarChartDataSet.swift in Sources */,
+				4F715C362216B42B00A0079E /* NSBezierPath+Extension.swift in Sources */,
 				FA07D034D9C3BC7795184ACA /* LineScatterCandleRadarChartDataSet.swift in Sources */,
 				859C658321E34C0200D9D1B5 /* RoundedBarChartView.swift in Sources */,
 				2C879FC24D7A15D70BE4063F /* PieChartData.swift in Sources */,
@@ -887,6 +905,7 @@
 				1311BEC21E9CC264E971EFAF /* ILineRadarChartDataSet.swift in Sources */,
 				146EE16342C2BADC92E45BF2 /* ILineScatterCandleRadarChartDataSet.swift in Sources */,
 				FAAD9FF6565DED2652188584 /* IPieChartDataSet.swift in Sources */,
+				4F715C332216B2A200A0079E /* NSColor+Extension.swift in Sources */,
 				83BBAF3EDC31FD452F8BF1DB /* IRadarChartDataSet.swift in Sources */,
 				50476F8E6662CAFC1EFE0723 /* IScatterChartDataSet.swift in Sources */,
 				97E033CC0ABEF0F448DAFA8E /* DataApproximator.swift in Sources */,
@@ -900,6 +919,7 @@
 				3CBE95F1E9394FA08CDCF31E /* BarHighlighter.swift in Sources */,
 				D326491E8BCDE54A0921E137 /* ChartHighlighter.swift in Sources */,
 				64FA1EDB4DC1F65727D52D10 /* CombinedHighlighter.swift in Sources */,
+				4F715C382216B6B700A0079E /* UIColor+Extension.swift in Sources */,
 				758EB1C75063ED3373542F3B /* Highlight.swift in Sources */,
 				4E98788ABEF6496C23F3E6C6 /* HorizontalBarHighlighter.swift in Sources */,
 				203A39685CC96FC625F616E4 /* IHighlighter.swift in Sources */,

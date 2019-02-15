@@ -423,7 +423,11 @@ open class RoundedBarChartRenderer: BarLineScatterCandleBubbleRenderer
                 context.setFillColor(dataSet.color(atIndex: j).cgColor)
             }
 
-            let bezierPath = UIBezierPath(roundedRect: barRect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: barRect.size.width / 2, height: barRect.size.width / 2))
+            #if os(iOS) || os(tvOS)
+                let bezierPath = UIBezierPath(roundedRect: barRect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: barRect.size.width / 2, height: barRect.size.width / 2))
+            #else
+                let bezierPath = NSBezierPath(roundedRect: barRect, xRadius: barRect.size.width / 2, yRadius: barRect.size.width / 2)
+            #endif
             context.addPath(bezierPath.cgPath)
 
             context.drawPath(using: .fill)
