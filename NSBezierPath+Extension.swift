@@ -24,6 +24,8 @@ extension NSBezierPath {
                 path.addCurve(to: points[2], control1: points[0], control2: points[1])
             case .closePath:
                 path.closeSubpath()
+            @unknown default:
+                print("NSBezierPath type unknown: \(type)")
             }
         }
 
